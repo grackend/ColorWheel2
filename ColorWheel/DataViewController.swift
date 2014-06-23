@@ -26,11 +26,13 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        /*
         if let obj: AnyObject = dataObject {
-            self.dataLabel!.text = obj.description
+            self.dataLabel!.text = ""
         } else {
             self.dataLabel!.text = ""
         }
+*/
     }
 
 

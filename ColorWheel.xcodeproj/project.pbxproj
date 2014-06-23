@@ -14,6 +14,7 @@
 		B2EAB3481958A74B007CB3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EAB3461958A74B007CB3A5 /* Main.storyboard */; };
 		B2EAB34A1958A74B007CB3A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EAB3491958A74B007CB3A5 /* Images.xcassets */; };
 		B2EAB3561958A74B007CB3A5 /* ColorWheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB3551958A74B007CB3A5 /* ColorWheelTests.swift */; };
+		B2EAB3611958A825007CB3A5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB3601958A825007CB3A5 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B2EAB34F1958A74B007CB3A5 /* ColorWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EAB3541958A74B007CB3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2EAB3551958A74B007CB3A5 /* ColorWheelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelTests.swift; sourceTree = "<group>"; };
+		B2EAB3601958A825007CB3A5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		B2EAB3301958A74B007CB3A5 = {
 			isa = PBXGroup;
 			children = (
+				B2EAB35F1958A816007CB3A5 /* Models */,
 				B2EAB33B1958A74B007CB3A5 /* ColorWheel */,
 				B2EAB3521958A74B007CB3A5 /* ColorWheelTests */,
 				B2EAB33A1958A74B007CB3A5 /* Products */,
@@ -113,6 +116,14 @@
 				B2EAB3541958A74B007CB3A5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2EAB35F1958A816007CB3A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2EAB3601958A825007CB3A5 /* Color.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				B2EAB3411958A74B007CB3A5 /* RootViewController.swift in Sources */,
 				B2EAB3451958A74B007CB3A5 /* ModelController.swift in Sources */,
 				B2EAB3431958A74B007CB3A5 /* DataViewController.swift in Sources */,
+				B2EAB3611958A825007CB3A5 /* Color.swift in Sources */,
 				B2EAB33F1958A74B007CB3A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
