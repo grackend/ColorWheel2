@@ -7,7 +7,7 @@
         <!--Data View Controller-->
         <scene sceneID="3qM-eY-iJ1">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="hzS-jB-y9W" customClass="DataViewController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hzS-jB-y9W" customClass="DataViewController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6LC-1I-4vP"/>
                         <viewControllerLayoutGuide type="bottom" id="a4F-Wq-f2I"/>
@@ -94,6 +94,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edX-0H-JQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="270" y="800"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="pyl-fX-Lqh">
+            <objects>
+                <viewController id="NnQ-Yc-VJZ" customClass="RootViewController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5eE-RO-eRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="JS0-mo-tlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ISa-JJ-5Ri">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smY-HA-pqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="1406"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fJb-M0-lv9">
@@ -309,6 +328,40 @@
             </objects>
             <point key="canvasLocation" x="1053" y="800"/>
         </scene>
+        <!--Data View Controller-->
+        <scene sceneID="Bds-zE-bIA">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="oba-Ip-f3u" customClass="DataViewController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uaN-VY-sGs"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Yf-KQ-6B3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uSw-h4-QoE">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZD-ES-a3f">
+                                <rect key="frame" x="219" y="229" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6ZD-ES-a3f" secondAttribute="centerY" constant="0.5" id="AE6-rk-fSS"/>
+                            <constraint firstAttribute="centerX" secondItem="6ZD-ES-a3f" secondAttribute="centerX" id="AlX-3b-uXS"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="6ZD-ES-a3f" id="tBm-pJ-df4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSM-JN-xuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="1406"/>
+        </scene>
         <!--Page View Controller-->
         <scene sceneID="tOP-eU-Hfm">
             <objects>
@@ -322,7 +375,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1mi-y4-KZw"/>
         <segue reference="zE6-Cj-YQv"/>
+        <segue reference="163-J2-eQP"/>
     </inferredMetricsTieBreakers>
 </document>

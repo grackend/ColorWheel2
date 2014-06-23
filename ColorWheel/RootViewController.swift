@@ -21,7 +21,6 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.delegate = self
 
         let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard)!
-        //let secondViewController: DataViewController = self.modelController.viewControllerAtIndex(1, storyboard: self.storyboard)!
         let viewControllers: NSArray = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .Forward, animated: false, completion: {done in })
 
@@ -32,7 +31,8 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
         // Set the page view controller's bounds using an inset rect so that self's view is visible around the edges of the pages.
         var pageViewRect = self.view.bounds
-        self.pageViewController!.view.frame = pageViewRect
+//        self.pageViewController!.view.frame = pageViewRect // ORIGINAL
+        self.pageViewController!.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30)
 
         self.pageViewController!.didMoveToParentViewController(self)
 
