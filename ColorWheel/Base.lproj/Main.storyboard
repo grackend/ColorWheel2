@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edX-0H-JQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="800"/>
+            <point key="canvasLocation" x="270" y="800"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fJb-M0-lv9">
@@ -120,7 +120,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="PUP-n6-zHF"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="aE2-eb-2Ou"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-b0-KD8">
@@ -130,7 +130,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="Qry-KG-ke1"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="8PA-Bb-gat"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSf-jR-Chv">
@@ -140,7 +140,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="y1T-hd-aJf"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="EBG-O8-E4f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBh-1l-sIZ">
@@ -150,7 +150,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="uJo-YS-7sm"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="VwK-Rh-r3b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAA-dF-X0i">
@@ -160,7 +160,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="D11-SR-KOi"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="zE6-Cj-YQv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-Id-NIm">
@@ -170,7 +170,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="atM-zA-tJz"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="fci-c1-E7f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-O6-7Ng">
@@ -180,7 +180,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="lvj-PV-oFj"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="eCv-9I-skd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLE-3W-mOj">
@@ -190,7 +190,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="PYH-k5-5rG"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="z9A-Cq-t7J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-Pj-Qz5">
@@ -200,7 +200,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Umc-g8-wd7" kind="show" id="uoi-Wx-9iM"/>
+                                    <segue destination="aep-qO-cJc" kind="show" id="tJs-pJ-QWD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -226,12 +226,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="2.7755575615628914e-17" translatesAutoresizingMaskIntoConstraints="NO" id="qRK-wO-nzN">
-                                <rect key="frame" x="85" y="239" width="150" height="2"/>
+                                <rect key="frame" x="90" y="239" width="150" height="2"/>
                                 <color key="tintColor" red="0.21387977129999999" green="0.49417608149999998" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="progressTintColor" red="0.48004657519999999" green="0.56608191919999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generating Palette..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpw-qo-5ef">
-                                <rect key="frame" x="65" y="99" width="190" height="31"/>
+                                <rect key="frame" x="70" y="152" width="190" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -244,7 +244,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxX-3n-HFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="800"/>
+            <point key="canvasLocation" x="1110" y="221"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j3D-u9-NVZ">
+            <objects>
+                <viewController id="aep-qO-cJc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mSt-2e-HYo"/>
+                        <viewControllerLayoutGuide type="bottom" id="S7M-l6-zw9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kst-Ow-qaP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-lm-zWg">
+                                <rect key="frame" x="38" y="96" width="115" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-UV-WCu">
+                                <rect key="frame" x="169" y="225" width="115" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-Mn-fkA">
+                                <rect key="frame" x="38" y="225" width="115" height="115"/>
+                                <color key="backgroundColor" red="0.48004657519999999" green="0.56608191919999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUJ-O3-tRc">
+                                <rect key="frame" x="169" y="96" width="115" height="115"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KX-iT-OER">
+                                <rect key="frame" x="117" y="410" width="87" height="30"/>
+                                <color key="backgroundColor" red="0.48123009157809993" green="0.96171476403061229" blue="0.82398750661753928" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wMo-OS-M2s" kind="show" id="1mi-y4-KZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG4-KC-wFb">
+                                <rect key="frame" x="117" y="372" width="87" height="30"/>
+                                <color key="backgroundColor" red="0.732135727937966" green="0.98154496173469385" blue="0.93870956403189632" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90589012960000004" green="1" blue="0.99548502670000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jf9-1t-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="800"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="tOP-eU-Hfm">
@@ -259,7 +313,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y1T-hd-aJf"/>
+        <segue reference="1mi-y4-KZw"/>
+        <segue reference="zE6-Cj-YQv"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.39174662883778738" green="0.95677649456521741" blue="0.43291954245709813" alpha="1" colorSpace="calibratedRGB"/>
 </document>
