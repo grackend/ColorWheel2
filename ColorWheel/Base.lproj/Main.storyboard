@@ -246,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="221"/>
         </scene>
-        <!--View Controller-->
+        <!--PaletteView-->
         <scene sceneID="j3D-u9-NVZ">
             <objects>
-                <viewController id="aep-qO-cJc" sceneMemberID="viewController">
+                <viewController id="aep-qO-cJc" userLabel="PaletteView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mSt-2e-HYo"/>
                         <viewControllerLayoutGuide type="bottom" id="S7M-l6-zw9"/>
@@ -258,18 +258,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-lm-zWg">
-                                <rect key="frame" x="38" y="96" width="115" height="115"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-UV-WCu">
                                 <rect key="frame" x="169" y="225" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" label="MatchThree"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-Mn-fkA">
                                 <rect key="frame" x="38" y="225" width="115" height="115"/>
-                                <color key="backgroundColor" red="0.48004657519999999" green="0.56608191919999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="MatchTwo">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUJ-O3-tRc">
                                 <rect key="frame" x="169" y="96" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label="MatchOne">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KX-iT-OER">
                                 <rect key="frame" x="117" y="410" width="87" height="30"/>
@@ -290,6 +293,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-lm-zWg">
+                                <rect key="frame" x="38" y="96" width="115" height="115"/>
+                                <accessibility key="accessibilityConfiguration" label="ColorOriginal">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90589012960000004" green="1" blue="0.99548502670000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
