@@ -16,7 +16,6 @@ var green: Bool = false; var yellowGreen: Bool = false; var yellow: Bool = false
 
 //(void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 class ButtonController: UIButton {
-    override func addTarget(target: AnyObject!, action: Selector, forControlEvents controlEvents: UIControlEvents){
         if self.selected{
             if self.accessibilityLabel == "Orange" {
                 orange = true
@@ -38,6 +37,4 @@ class ButtonController: UIButton {
                 yellow = true
             }
         }
-        super.addTarget(target: UIButton, action: Selector, controlEvents: UIControlEvents)
-    }
 }
