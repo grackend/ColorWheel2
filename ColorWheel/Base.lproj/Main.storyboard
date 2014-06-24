@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="224" y="-1628"/>
         </scene>
-        <!--View Controller - WelcomeScreen-->
+        <!--Welcome Screen Controller - WelcomeScreen-->
         <scene sceneID="Lx2-pU-ACC">
             <objects>
-                <viewController title="WelcomeScreen" id="8CZ-Ur-Xl7" sceneMemberID="viewController">
+                <viewController title="WelcomeScreen" id="8CZ-Ur-Xl7" customClass="WelcomeScreenController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F96-0z-Bue"/>
                         <viewControllerLayoutGuide type="bottom" id="902-48-A5u"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="378" y="1406"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Screen Controller - ChooseScreen-->
         <scene sceneID="fJb-M0-lv9">
             <objects>
-                <viewController id="wMo-OS-M2s" sceneMemberID="viewController">
+                <viewController title="ChooseScreen" id="wMo-OS-M2s" customClass="WelcomeScreenController" customModule="ColorWheel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Xf-2l-pwI"/>
                         <viewControllerLayoutGuide type="bottom" id="sV3-vr-hZV"/>
@@ -135,91 +135,97 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qej-Iq-80h">
                                 <rect key="frame" x="45" y="117" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.95677649456521741" green="0.43704313359128205" blue="0.25741023332362484" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <accessibility key="accessibilityConfiguration" label="Orange"/>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="aE2-eb-2Ou"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="OrangeSegue" id="aE2-eb-2Ou"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-b0-KD8">
                                 <rect key="frame" x="45" y="198" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.62751755128662978" green="0.19312654690214326" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Purple"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="8PA-Bb-gat"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="PurpleSegue" id="8PA-Bb-gat"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSf-jR-Chv">
                                 <rect key="frame" x="45" y="283" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.25636489505207555" green="0.95677649460000003" blue="0.51797125735352467" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Green"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="EBG-O8-E4f"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="GreenSegue" id="EBG-O8-E4f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBh-1l-sIZ">
                                 <rect key="frame" x="128" y="283" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.78382294931171992" green="0.95677649460000003" blue="0.30450999156671066" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="YellowGreen"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="VwK-Rh-r3b"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="YellowGreenSegue" id="VwK-Rh-r3b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAA-dF-X0i">
                                 <rect key="frame" x="128" y="198" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.21387977134996594" green="0.49417608151830178" blue="0.95677649460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Blue"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="zE6-Cj-YQv"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="BlueSegue" id="zE6-Cj-YQv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-Id-NIm">
                                 <rect key="frame" x="211" y="283" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.95677649460000003" green="0.9530763734857387" blue="0.4380276245164616" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Yello"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="fci-c1-E7f"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="YellowSegue" id="fci-c1-E7f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-O6-7Ng">
                                 <rect key="frame" x="211" y="198" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.41767047716317174" green="0.95677649460000003" blue="0.89126347708582565" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="LightBlue"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="eCv-9I-skd"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="LightBlueSegue" id="eCv-9I-skd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLE-3W-mOj">
                                 <rect key="frame" x="211" y="117" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.95677649460000003" green="0.26952296970951356" blue="0.84864143526127045" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Magenta"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="z9A-Cq-t7J"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="MagentaSegue" id="z9A-Cq-t7J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-Pj-Qz5">
                                 <rect key="frame" x="128" y="117" width="65" height="65"/>
                                 <color key="backgroundColor" red="0.95677649456521741" green="0.24216754154743494" blue="0.45290664898878369" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Fuschia"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aep-qO-cJc" kind="show" id="tJs-pJ-QWD"/>
+                                    <segue destination="aep-qO-cJc" kind="show" identifier="FuschiaSegue" id="tJs-pJ-QWD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,7 +318,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-lm-zWg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-lm-zWg" customClass="ColorController" customModule="ColorWheel" customModuleProvider="target">
                                 <rect key="frame" x="38" y="96" width="115" height="115"/>
                                 <accessibility key="accessibilityConfiguration" label="ColorOriginal">
                                     <bool key="isElement" value="YES"/>
@@ -375,7 +381,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zE6-Cj-YQv"/>
-        <segue reference="163-J2-eQP"/>
+        <segue reference="1mi-y4-KZw"/>
+        <segue reference="aE2-eb-2Ou"/>
     </inferredMetricsTieBreakers>
 </document>
