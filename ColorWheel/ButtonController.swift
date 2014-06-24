@@ -12,29 +12,43 @@ import UIKit
 var orange: Bool = false; var fuschia: Bool = false; var magenta: Bool = false
 var purple: Bool = false; var blue: Bool = false; var lightBlue: Bool = false
 var green: Bool = false; var yellowGreen: Bool = false; var yellow: Bool = false
+var noneSelected: Bool = false
 
+var colorArray: UIColor[] = [UIColor(), UIColor(), UIColor(), UIColor()]
+var origColor: UIColor = UIColor()
 
-//(void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
-class ButtonController: UIControl {
-        if self.UIControlState == "selected"{
-            if self.accessibilityLabel == "Orange" {
+class ButtonController: UIViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        switch segue.identifier! {
+            case "OrangeSegue":
                 orange = true
-            }else if self.accessibilityLabel == "Fuschia" {
+                origColor = UIColor(red: 0.95678, green: 0.43704, blue: 0.25741, alpha: 1.0)
+            case "FuschiaSegue":
                 fuschia = true
-            }else if self.accessibilityLabel == "Magenta" {
+                origColor = UIColor(red: 0.95678, green: 0.24217, blue: 0.45291, alpha: 1.0)
+            case "MagentaSegue":
                 magenta = true
-            }else if self.accessibilityLabel == "Purple" {
+                origColor = UIColor(red: 0.95678, green: 0.26952, blue: 0.84864, alpha: 1.0)
+            case "PurpleSegue":
                 purple = true
-            }else if self.accessibilityLabel == "Blue" {
+                origColor = UIColor(red: 0.62752, green: 0.19313, blue: 0.95678, alpha: 1.0)
+            case "BlueSegue":
                 blue = true
-            }else if self.accessibilityLabel == "LightBlue" {
+                origColor = UIColor(red: 0.21388, green: 0.49418, blue: 0.95678, alpha: 1.0)
+            case "LightBlueSegue":
                 lightBlue = true
-            }else if self.accessibilityLabel == "Green" {
+                origColor = UIColor(red: 0.41767, green: 0.95678, blue: 0.89126, alpha: 1.0)
+            case "GreenSegue":
                 green = true
-            }else if self.accessibilityLabel == "YellowGreen" {
+                origColor = UIColor(red: 0.25636, green: 0.95678, blue: 0.51797, alpha: 1.0)
+            case "YellowGreenSegue":
                 yellowGreen = true
-            }else if self.accessibilityLabel == "Yellow" {
+                origColor = UIColor(red: 0.78382, green: 0.95678, blue: 0.30451, alpha: 1.0)
+            case "YellowSegue":
                 yellow = true
-            }
+                origColor = UIColor(red: 1.0, green: 1.0, blue: 0, alpha: 1.0)
+            default:
+                noneSelected = true
         }
+    }
 }

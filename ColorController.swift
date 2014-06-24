@@ -16,18 +16,9 @@ import UIKit
 class ColorController : UIView {
     override func setNeedsLayout() {
         super.setNeedsLayout()
-        // Do any additional setup after loading the view, typically from a nib.
-        var colorArray: UIColor[] = [UIColor(), UIColor(), UIColor(), UIColor()]
-        
-        let origColor = UIColor(red: 0.10196, green: 1, blue: 0.7764, alpha: 1)
+
         colorArray[0] = origColor
         
-        //math stuff:
-        var redVal: CMutablePointer<CGFloat> = nil
-        var greenVal: CMutablePointer<CGFloat> = nil
-        var blueVal: CMutablePointer<CGFloat> = nil
-        var alpha1: CMutablePointer<CGFloat> = nil
-                
         var rgba = CGFloat[](count: 4, repeatedValue: 0.0)
         origColor.getRed(&rgba[0], green: &rgba[1], blue: &rgba[2], alpha: &rgba[3])
         
