@@ -15,8 +15,8 @@ var green: Bool = false; var yellowGreen: Bool = false; var yellow: Bool = false
 
 
 //(void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
-class ButtonController: UIButton {
-        if self.selected{
+class ButtonController: UIControl {
+        if self.UIControlState == "selected"{
             if self.accessibilityLabel == "Orange" {
                 orange = true
             }else if self.accessibilityLabel == "Fuschia" {
