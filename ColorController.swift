@@ -29,6 +29,13 @@ class ColorController : UIView {
         colorArray[1] = MatchOne
         colorArray[2] = MatchTwo
         colorArray[3] = MatchThree
+        
+        var redArray = CGFloat[](count: 6, repeatedValue: 0.0)
+        redArray[0] = rgba[0]
+        var greenArray = CGFloat[](count: 6, repeatedValue: 0.0)
+        greenArray[0] = rgba[1]
+        var blueArray = CGFloat[](count: 6, repeatedValue: 0.0)
+        blueArray[0] = rgba[2]
 
         println("red: \(rgba[0]), green: \(rgba[1]), blue: \(rgba[2]), alpha: \(rgba[3])")
         

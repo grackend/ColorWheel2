@@ -50,5 +50,6 @@ class ButtonController: UIViewController {
             default:
                 noneSelected = true
         }
+        println("SOMETHING IS HAPPENING")
     }
 }

@@ -82,7 +82,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wMo-OS-M2s" kind="show" id="9jX-Ia-d8w"/>
+                                    <segue destination="wMo-OS-M2s" kind="show" id="XT4-RR-zGt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +122,7 @@
                         <viewControllerLayoutGuide type="top" id="5Xf-2l-pwI"/>
                         <viewControllerLayoutGuide type="bottom" id="sV3-vr-hZV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nDG-Hr-K0h" customClass="ButtonController" customModule="ColorWheel" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="nDG-Hr-K0h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -238,6 +238,50 @@
             </objects>
             <point key="canvasLocation" x="643" y="800"/>
         </scene>
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="1UP-UD-WV4">
+            <objects>
+                <tableViewController id="LVo-6S-a0H" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ugn-ZY-Eud">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="3EC-gt-cwf">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3EC-gt-cwf" id="j7i-gs-8W4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LVo-6S-a0H" id="Qlf-nh-6Oc"/>
+                            <outlet property="delegate" destination="LVo-6S-a0H" id="6Vm-xd-4FI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="8ed-g1-eal"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFd-lC-ree" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nxk-PW-Epk">
+            <objects>
+                <navigationController id="ij7-iJ-fzz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Au3-Uw-YsO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LVo-6S-a0H" kind="relationship" relationship="rootViewController" id="YS9-tP-LMH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EId-jO-aVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="186"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="y2w-jE-22c">
             <objects>
@@ -309,7 +353,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wMo-OS-M2s" kind="show" id="1mi-y4-KZw"/>
+                                    <segue destination="wMo-OS-M2s" kind="show" id="ikB-dM-8VB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG4-KC-wFb">
@@ -345,23 +389,34 @@
                         <viewControllerLayoutGuide type="bottom" id="7Yf-KQ-6B3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uSw-h4-QoE">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZD-ES-a3f">
-                                <rect key="frame" x="219" y="229" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose a Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZD-ES-a3f">
+                                <rect key="frame" x="90" y="50" width="141" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.80551990419999997" green="0.92578519969999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="6ZD-ES-a3f" secondAttribute="centerY" constant="0.5" id="AE6-rk-fSS"/>
-                            <constraint firstAttribute="centerX" secondItem="6ZD-ES-a3f" secondAttribute="centerX" id="AlX-3b-uXS"/>
+                            <constraint firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="6ZD-ES-a3f" secondAttribute="centerY" priority="250" id="AE6-rk-fSS"/>
+                            <constraint firstAttribute="centerX" secondItem="6ZD-ES-a3f" secondAttribute="centerX" priority="250" id="AlX-3b-uXS"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AE6-rk-fSS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="AE6-rk-fSS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="dataLabel" destination="6ZD-ES-a3f" id="tBm-pJ-df4"/>
                     </connections>
@@ -383,7 +438,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9jX-Ia-d8w"/>
-        <segue reference="z9A-Cq-t7J"/>
+        <segue reference="XT4-RR-zGt"/>
+        <segue reference="zE6-Cj-YQv"/>
     </inferredMetricsTieBreakers>
 </document>
