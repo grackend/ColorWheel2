@@ -14,6 +14,5 @@ class TestingFile: UIButton {
         var rgb = CGFloat[](count: 4, repeatedValue: 0.0)
         var Color: UIColor = self.backgroundColor
         Color.getRed(&rgb[0], green: &rgb[1], blue: &rgb[2], alpha: &rgb[3])
-        println("red: \(rgb[0]), green: \(rgb[1]), blue: \(rgb[2]), alpha: \(rgb[3]), button: \(self.accessibilityLabel)")
     }
 }
